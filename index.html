@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sliding Puzzle Game</title>
+<link rel="stylesheet"  type="text/CSS" href="style.css">
+</head>
+<body style="background-image: url(bg_img.jpg);background-size: 50%;">
+  <div class="container">
+    <div class="home-button">
+      <button onclick="returnToHome()">Home</button>
+    </div>
+    
+    <div class="board" id="board">
+      <!-- Tiles will be generated here -->
+     
+    </div>
+    <div class="coin" id="coin">
+      <span id="coinCount">0</span>
+    </div>
+    <div id="autoCompleteButton" style="display: none; margin-top: 5%;">
+      <button onclick="autoComplete()">Auto Complete</button>
+    </div>
+    
+    <div id="options">
+      <button onclick="initializeBoard(3)" style="background-color: darkgoldenrod; margin-right: 20%;">Easy </button>
+      <button onclick="initializeBoard(5)"  style="background-color: darkgoldenrod;">Difficult </button>
+    </div>
+    <div id="message"></div>
+    <div id="buttons" style="display: none;">
+      <button onclick="playAgain()">Play Again</button>
+    </div>
+  </div>
+
+<script src="script.js"></script>
+</body>
+</html>
